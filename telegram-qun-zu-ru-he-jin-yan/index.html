@@ -278,6 +278,18 @@
         </div>
     </div>
 </main>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleRead = document.getElementById('toggleRead');
+        const readList = document.getElementById('readList');
+        const toggleIcon = document.querySelector('.toggle-icon');
+
+        toggleRead.addEventListener('click', function() {
+            readList.classList.toggle('hidden');
+            toggleIcon.classList.toggle('rotated');
+        });
+    });
+</script>
 
     <footer>
         <div class="foot-main">
