@@ -511,6 +511,66 @@ hr {
     font-size: .9rem;
     color: #666;
 }
+
+.read-table{
+    background-color: #FFF;
+    max-width: 300px;
+    padding: .2rem 1rem;
+    border-radius: .5rem;
+    border: solid 1px #CCC;
+    margin: 1rem 0;
+    box-shadow: 0px 0px 10px #d1d8dd, 0px 0px 40px #ffffff;
+}
+.read-tool{
+    font-size: .95rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.read-table ul {
+    list-style-type: none;
+    counter-reset: section;
+    font-size: .8rem;
+}
+
+.read-table ul li::before {
+    counter-increment: section;
+    content: counter(section) ". ";
+}
+
+.read-table ul ul {
+    counter-reset: subsection;
+    margin-left: 1rem;
+}
+
+.read-table ul ul li::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+.read-list {
+    max-height: 1000px;
+    transition: max-height 0.2s ease-out;
+}
+.read-list a{
+    color: #777 !important;
+    text-decoration: none;
+    font-weight: normal;
+}
+.read-list a:hover{
+    text-decoration: underline;
+}
+.read-list.hidden {
+    max-height: 0;
+    overflow: hidden;
+    border-top: none;
+}
+.toggle-icon {
+    transition: transform 0.3s ease;
+}
+.toggle-icon.rotated {
+    transform: rotate(180deg);
+}
+
 @media screen and (max-width: 950px) {
     header {
         position: sticky;
