@@ -358,7 +358,8 @@ article{
     text-align: center;
 }
 .down img{
-    width: 20rem;
+    /* width: 20rem; */
+    height: 10rem;
 }
 .down h1{
     font-size: 2rem;
@@ -570,7 +571,9 @@ hr {
 .toggle-icon.rotated {
     transform: rotate(180deg);
 }
-
+.state{
+    display: none;
+}
 @media screen and (max-width: 950px) {
     header {
         position: sticky;
@@ -705,5 +708,8 @@ hr {
     }
     .down-btn a{
         width: 100%;
+    }
+    .state{
+        display: block;
     }
 }
