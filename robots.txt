@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tgapps.org/sitemap.xml
+Sitemap: https://wpsoffices.org/sitemap.xml
